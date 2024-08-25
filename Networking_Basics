@@ -1,0 +1,31 @@
+NETWORKING TOOLS: on ubuntu
+Networking tools are used to troubleshoot network issues.they are also used to monitor network traffic and to test network connectivity.some of the most comman networking tools are :
+traceroute - Traces the route taken by packet over IP network.
+installation command = sudo apt install traceroute
+
+ping (packet internet groper)- sends ICMP(Internet Control Message Protocol) echo request packets to a host to test the Internet connection.
+usage = ping [options] Destination
+
+mtr - Combines the functionality of traceroute and ping into a single diagnostic tool.
+nmap - Scans hosts for open ports.
+
+netstat - Displays network connections, routing tables, interface statistics, masquerade connections, and multicast memberships.
+netstats output states:
+ESTABLISHED - Both hosts are connected. 
+CLOSING     - The remote host has agreed to close its connection. 
+LISTENING   - Your computer is waiting to handle an incoming connection. 
+SYN_RCVD    - A remote host has asked for you to start a connection. 
+SYN_SENT    - Your computer has accepted to start a connection. 
+LAST_ACK    - Your computer needs to obliterate (i.e. erase from memory)
+              the packets before closing the connection. 
+TIMED_WAIT  - See above. 
+CLOSE_WAIT  - The remote host is closing its connection with your computer. 
+FIN_WAIT 1  - A client is closing its connection. 
+FIN_WAIT 2  - Both hosts have agreed to close the connection.
+refer - http://www.c-jump.com/CIS24/Slides/Networking/html_utils/netstat.html
+
+ufw and firewalld - Firewall management tools.
+iptables and nftables - Firewall management tools.
+tcpdump - Dumps traffic on a network.
+dig - DNS lookup utility.
+scp - Secure copy.
